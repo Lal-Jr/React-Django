@@ -12,9 +12,3 @@ class CreateRoomSerializer(serializers.ModelSerializer):
     class Meta:
         model = Room
         fields = ('guest_can_pause','votes_to_skip')
-
-class CreateRoomView(APIView):
-    serializer_class = ""
-
-    def post(self, request, format=None):
-        pass
